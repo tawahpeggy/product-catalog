@@ -1,0 +1,11 @@
+.btn-primary{
+    float:left;
+    border-radius:50%;
+    color:red;
+}
+#head{
+    text-align: center;
+    color:orangered;
+    background-color: aquamarine;
+    border-radius:25% 25% 25% 25%; 
+}
