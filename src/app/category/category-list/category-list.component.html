@@ -1,18 +1,20 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!--  use an ngfor wnen listing all categories since they are morethan one -->
+
 <div class="sidebar">
     <h1 id='head'>Product Categories</h1>
     <a routerLink="/addCategory" ><button id="btn" class="btn btn-primary text-light" style="font-weight: 100; padding:10px;font-size:20px;">New Category</button></a>
-  <a href="#phones"><i class="fa fa-fw fa-phone"></i> Phones</a>
-  <a href="#computers"><i class="fa fa-fw fa-desktop"></i> Computers</a>
-  <a href="#kitchen"><i class="fa fa-fw fa-utensils"></i> Kitchen utencils</a>
-  <a href="#televisions"><i class="fa fa-fw fa-tv"></i> {{ 'Television' }}</a>
-</div>
+    <!--  use an ngfor wnen listing all categories since they are morethan one -->
+    <table>
+          <tr  id ="table" class="text-primary" *ngFor ="let category of categories"> 
+           <a > <td>{{ category.name }} </td> </a>
+          </tr>
+      </table>
 
+   </div>
   
       <!-- Meta tags -->
-      <meta charset = "utf-8">
-      <meta name = "viewport" content = "width = device-width, initial-scale = 1, shrink-to-fit = no">
+      <!-- <meta charset = "utf-8">
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1, shrink-to-fit = no"> -->
       
       <!-- Bootstrap CSS -->
       <link rel = "stylesheet" 
@@ -22,7 +24,7 @@
       
     
    
-   <body>
+   
       <div class = "container">
          <h2>Basic Carousel</h2>
          <div id = "carouselwithIndicators" class = "carousel slide w-50" data-ride = "carousel">
@@ -61,10 +63,10 @@
                <span class = "sr-only">Next</span>
             </a>
          </div>
-      </div>
+      </div> 
       
       <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-      <script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+       <script src = "https://code.jquery.com/jquery-3.3.1.slim.min.js" 
          integrity = "sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
          crossorigin = "anonymous">
       </script>
@@ -77,9 +79,7 @@
       <script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
          integrity = "sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
          crossorigin = "anonymous">
-      </script>
+      </script>  -->
       
 
-    
 
-<!-- <li *ngFor= "let category of categories" >hello peggy how are you???  {{ 'category.name' }}</li> -->

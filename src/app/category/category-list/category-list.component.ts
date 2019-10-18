@@ -10,10 +10,10 @@ export class CategoryListComponent implements OnInit {
   public categories: Category[];
 
   constructor(private productCatalog: ProductCatalogService) { }
-y
+
   ngOnInit() {
   this.productCatalog.getAllCategories()
-  .subscribe(function(data: Category[]){
+  .subscribe((data: Category[])=>{
     this.categories = data;
     console.log(this.categories);
   })
