@@ -1,3 +1,7 @@
+*{
+  padding:0px;
+  margin:0px;
+}
 .head{
     
 }
@@ -6,14 +10,15 @@ body {font-family: "Lato", sans-serif;}
 
 .sidebar {
   height: 100%;
-  width: 160px;
+  width: 16%;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: lightgrey;
+  background-color: aqua;
   overflow-x: hidden;
   padding-top: 16px;
+  z-index:1;
 }
 
 .sidebar a {
@@ -25,7 +30,7 @@ body {font-family: "Lato", sans-serif;}
 }
 
 .sidebar a:hover {
-  color: aqua;
+  color: gold;
 }
 
 .main {

@@ -1,18 +1,18 @@
-<div class="row">
 <app-header> </app-header>
-  
+<router-outlet></router-outlet>
 
 <!-- search form -->
-<div id="search" class="col-sm-6">   
-   <h1>Find A Product</h1>
+<hr>
+<div id="search">   
+   <h1 style="text-align:center;">Find A Product</h1>
     <form>
-        <input style="width:100%; height:100%;"id="search" type = "text"placeholder="search for a product">
-        <button class = "btn btn-danger">search</button>
+        <input id="search" type = "text"placeholder="search for a product">
+        <button class ="btn btn-danger" style="border-radius:0px 9px 9px 0px">search</button>
     </form>
 </div>
-<div class="col-sm-2">
-    <app-category></app-category>
-</div>  
-<router-outlet></router-outlet>
-</div>
+<hr>
+<app-category></app-category>  
+
 <app-footer> </app-footer>
+   
+               

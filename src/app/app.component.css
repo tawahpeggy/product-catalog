@@ -1,5 +1,20 @@
-.search{
-    padding :2px;
+#search{
+    margin-left:10%;
+    margin-right:0;
+    width:90%;
+
+}
+#search form{
+    display:flex;
+    flex-direction:row;
+}
+#search form input[type="text"]{
+    border:8px solid #dc3545;
+    border-radius:9px 0px 0px 9px;
+    background-color:rgb(233, 223, 223);
+    border-right: none;
+}
+.btn{
     float:right;
 }
 body {

@@ -8,4 +8,21 @@
     color:orangered;
     background-color: aquamarine;
     border-radius:25% 25% 25% 25%; 
+    width:84%;
+    margin-left:16%;
+    margin-right:0px;
+}
+#navbar #navbar-expand-lgnavbar-dark #bg-info{
+    margin-left:16%;
+    margin-right:0;
+    width:84%;
+}
+#svg{
+    z-index:4;
+}
+.navbar-nav > Li {
+    padding-right:9px;
+    font-size:25px;
+    font-weight:bold;
+    color:black;
 }

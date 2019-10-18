@@ -9,6 +9,10 @@ import { ProductComponent } from './product/product.component';
 import { ProductDetailsComponent } from './product/product-details/product-details.component';
 import { CategoryComponent } from './category/category.component';
 import { CategoryListComponent } from './category/category-list/category-list.component';
+import { CategoryDetailsComponent } from './category/category-list/category-details/category-details.component';
+import { AddCategoryComponent } from './category/add-category/add-category.component';
+import { SignupComponent } from './authentication/signup/signup.component';
+import { LoginComponent } from './authentication/login/login.component';
 
 
 @NgModule({
@@ -20,6 +24,10 @@ import { CategoryListComponent } from './category/category-list/category-list.co
     ProductDetailsComponent,
     CategoryComponent,
     CategoryListComponent,
+    CategoryDetailsComponent,
+    AddCategoryComponent,
+    SignupComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
