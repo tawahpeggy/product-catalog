@@ -13,6 +13,7 @@ import { CategoryDetailsComponent } from './category/category-list/category-deta
 import { AddCategoryComponent } from './category/add-category/add-category.component';
 import { SignupComponent } from './authentication/signup/signup.component';
 import { LoginComponent } from './authentication/login/login.component';
+import { DeleteCategoryComponent } from './category/delete-category/delete-category.component';
 
 
 @NgModule({
@@ -28,6 +29,7 @@ import { LoginComponent } from './authentication/login/login.component';
     AddCategoryComponent,
     SignupComponent,
     LoginComponent,
+    DeleteCategoryComponent,
   ],
   imports: [
     BrowserModule,

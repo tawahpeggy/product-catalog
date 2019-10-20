@@ -6,15 +6,22 @@
     <!--  use an ngfor wnen listing all categories since they are morethan one -->
     <table>
           <tr  id ="table" class="text-primary" *ngFor ="let category of categories"> 
-           <a > <td>{{ category.name }} </td> </a>
+           <a routerLink= "categoryDetails" >
+               <td>
+               {{ category.name }} 
+              <!--<a routerLink="/delete" <button  class="btn gtn-sm btn-danger">Delete</button> -->
+              <!-- &nbsp; -->
+              <!-- <button  class="btn btn-success ">Edit</button> -->
+              </td> </a>
           </tr>
       </table>
-
+      <a ng-click="" ><button  class="btn btn-sm btn-danger">Delete</button></a>
+       &nbsp;
+      <button  class="btn btn-success">Edit</button>
    </div>
   
-      <!-- Meta tags -->
-      <!-- <meta charset = "utf-8">
-      <meta name = "viewport" content = "width = device-width, initial-scale = 1, shrink-to-fit = no"> -->
+      
+      <meta name = "viewport" content = "width = device-width, initial-scale = 1, shrink-to-fit = no">
       
       <!-- Bootstrap CSS -->
       <link rel = "stylesheet" 
@@ -26,8 +33,7 @@
    
    
       <div class = "container">
-         <h2>Basic Carousel</h2>
-         <div id = "carouselwithIndicators" class = "carousel slide w-50" data-ride = "carousel">
+         <div  style="width:84%; margin-left:16%; margin-right:0;" id = "carouselwithIndicators" class = "carousel slide w-50" data-ride = "carousel">
             <ol class = "carousel-indicators">
                <li data-target = "#carouselExampleIndicators" data-slide-to = "0" class = "active"></li>
                <li data-target = "#carouselExampleIndicators" data-slide-to = "1"></li>

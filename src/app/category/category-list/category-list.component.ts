@@ -17,7 +17,14 @@ export class CategoryListComponent implements OnInit {
     this.categories = data;
     console.log(this.categories);
   })
-  
+   
   }
-
+//   //delete's  a category
+// deleteCategory(category: Category): void { 
+//   // Pass movie object 
+//      this.productCatalogService.deleteCategory (category)(this.productCatalog)
+//     .subscribe( data => {
+//       this.categories = this.categories.filter(u => u !== category);
+//     })
+//};
 }
