@@ -14,7 +14,7 @@ getAllCategories(): Observable<Category[]>
 {
   return this.http.get<Category[]>("https://sheltered-falls-45349.herokuapp.com/api/category");
 }
-
+//delete category
 // deleteMovie(category:Category){
 //   return this.http.delete(this.baseUrl + category.id);
 // }
