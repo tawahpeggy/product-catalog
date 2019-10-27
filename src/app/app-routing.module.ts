@@ -7,9 +7,7 @@ import {  AddCategoryComponent } from './category/add-category/add-category.comp
 import { SignupComponent } from './authentication/signup/signup.component';
 import { LoginComponent } from './authentication/login/login.component';
 import { CategoryDetailsComponent } from './category/category-list/category-details/category-details.component';
-import { AppComponent } from './app.component';
-import{ DeleteCategoryComponent } from './category/delete-category/delete-category.component';
-
+import { EditCategoryComponent } from './category/edit-category/edit-category.component';
 
 const routes: Routes = [
 
@@ -20,8 +18,7 @@ const routes: Routes = [
    { path: 'signup',component:SignupComponent },
    { path: 'login',component:LoginComponent },
    { path:'categoryDetails' ,component:CategoryDetailsComponent },
-   { path:'home' ,component:AppComponent },
-   { path: 'delete' ,component:DeleteCategoryComponent }
+  { path: 'edit' ,component:EditCategoryComponent },
 
 ];
 

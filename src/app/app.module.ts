@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import  { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -13,7 +14,8 @@ import { CategoryDetailsComponent } from './category/category-list/category-deta
 import { AddCategoryComponent } from './category/add-category/add-category.component';
 import { SignupComponent } from './authentication/signup/signup.component';
 import { LoginComponent } from './authentication/login/login.component';
-import { DeleteCategoryComponent } from './category/delete-category/delete-category.component';
+import { EditCategoryComponent } from './category/edit-category/edit-category.component';
+
 
 
 @NgModule({
@@ -29,18 +31,20 @@ import { DeleteCategoryComponent } from './category/delete-category/delete-categ
     AddCategoryComponent,
     SignupComponent,
     LoginComponent,
-    DeleteCategoryComponent,
+    EditCategoryComponent,
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule
     
   
     
 
   ],
-  providers: [AppComponent],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

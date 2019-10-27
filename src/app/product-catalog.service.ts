@@ -14,8 +14,24 @@ getAllCategories(): Observable<Category[]>
 {
   return this.http.get<Category[]>("https://sheltered-falls-45349.herokuapp.com/api/category");
 }
-//delete category
-// deleteMovie(category:Category){
-//   return this.http.delete(this.baseUrl + category.id);
+
+
+//Create a category
+_Url="https://sheltered-falls-45349.herokuapp.com/api/category";
+createCategory(category: Category){
+ return this.http.post<any>(this._Url , category);
+
+
+}
+// //Edit a category
+// updateCategory(categoryid: number){
+//   return this.http.put<Category[]>('https://sheltered-falls-45349.herokuapp.com/api/category/'+categoryid);
+  
+
 // }
+//delete a category
+deleteCategory(categoryid: number){
+  return this.http.delete<Category[]>('https://sheltered-falls-45349.herokuapp.com/api/category/'+categoryid);
+
+}
  }

@@ -8,23 +8,42 @@ import { ProductCatalogService} from "../../product-catalog.service";
 })
 export class CategoryListComponent implements OnInit {
   public categories: Category[];
-
+id:number;
+category:any;
+  
   constructor(private productCatalog: ProductCatalogService) { }
 
   ngOnInit() {
+    //gets all categories
   this.productCatalog.getAllCategories()
   .subscribe((data: Category[])=>{
     this.categories = data;
     console.log(this.categories);
-  })
+  });
    
   }
-//   //delete's  a category
-// deleteCategory(category: Category): void { 
-//   // Pass movie object 
-//      this.productCatalogService.deleteCategory (category)(this.productCatalog)
-//     .subscribe( data => {
-//       this.categories = this.categories.filter(u => u !== category);
-//     })
-//};
+
+
+  
+  //  //edit an existing category
+  //  this.productCatalog.putCategory()
+  // .subscribe((data: Category[])=>{
+  //   this.updatecategory = data;
+  //   console.log(this.putcategory);
+  // })
+
+  // //delete's  a category
+  // this.productCatalog.deleteCategory()
+  // .subscribe((data: Category[])=>{
+  //   this.deletecategory = data;
+  //   console.log(this.deletecategory);
+  // })
+
+ delete(id: number) {
+    this.productCatalog.deleteCategory(id)
+    .subscribe((data)=>{
+      this.category = data;
+      console.log(this.category);
+    });
+  }
 }

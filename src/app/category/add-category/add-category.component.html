@@ -1,18 +1,44 @@
-<div class="jumbotron jumbotron-fluid bg-dark">
+<div class="jumbotron jumbotron-fluid bg-light">
 <div class="container">
 		<div class="dp"></div>
 		<h1> Add a Category </h1>
-		<form method="POST" action="#">
-            <!-- still to write an import image function so it can enable users import thier image or maybe choose from a dropdown -->
+		<form (ngSubmit)="onSubmit(add)" #add="ngForm">
+           <!-- still to write an import image function so it can enable users import thier image or maybe choose from a dropdown -->
 			<p>Import Image <Button class="text-white">Browse</Button> </p>
-			<p>Name</p>
-			<input type="text" placeholder="Category name" />
-			<p>Description</p>
-			<input type="text" placeholder="Describe your Categry" />
+			<label>Name</label>
+			<input type="text" id="name" class="form-control" placeholder="Category name" required [(ngModel)]="categories.name" name="name"/>
+			<!-- <label> Description </label>
+			<input type="text"id="description" placeholder="Describe your Categry" class="form-control" [(ngModel)]="categoryModel.description" name="Description"/> -->
+			<!-- <small class="text-danger" [class.d-none]="name.valid || name.untouched">Name is empty </small> -->
 			<section>
-	<button><input type="submit" class="btn btn-primary"  > Add Category</button>
+	<button type="submit" class="btn btn-primary"  > Add Category</button>
 				
 			</section>
 		</form>
     </div>
 </div>
+
+
+
+<!-- <div class="container">
+	<div class="row">
+		<div class="col-xs-12">
+			<form>
+				<div id="user-date">
+					<div class="from-group">
+						<label for="username">Username</label>
+						<input type="text" id="username"class="form-control">
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="secret ">secret Questions </label>
+					<select id="secret" class="form-control">
+						<option value="pet"your first pet></option>
+						<option value="teacher"
+											>your first teacher</option>					</select>
+				</div>
+				<button class="btn btn-primary"type="sugmit">Submit</button>
+			</form>
+		</div>
+	</div>
+</div> -->
