@@ -33,13 +33,7 @@ category:any;
   // })
 
   // //delete's  a category
-  // this.productCatalog.deleteCategory()
-  // .subscribe((data: Category[])=>{
-  //   this.deletecategory = data;
-  //   console.log(this.deletecategory);
-  // })
-
- delete(id: number) {
+    delete(id: number) {
     this.productCatalog.deleteCategory(id)
     .subscribe((data)=>{
       this.category = data;

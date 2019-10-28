@@ -26,7 +26,7 @@ onSubmit(add:NgForm){
     this.categories= new Category();
     console.log(this.categories);
   });
-  //  data =>console.log('success',data)
+  
   // , error => console.log('Error!',error) 
 }
   

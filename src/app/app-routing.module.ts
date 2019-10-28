@@ -8,7 +8,7 @@ import { SignupComponent } from './authentication/signup/signup.component';
 import { LoginComponent } from './authentication/login/login.component';
 import { CategoryDetailsComponent } from './category/category-list/category-details/category-details.component';
 import { EditCategoryComponent } from './category/edit-category/edit-category.component';
-
+//import { ProductComponent } from './product/product.component';
 const routes: Routes = [
 
   // { path: '',redirectTo: '/category', pathMatch:'full'},
@@ -19,6 +19,7 @@ const routes: Routes = [
    { path: 'login',component:LoginComponent },
    { path:'categoryDetails' ,component:CategoryDetailsComponent },
   { path: 'edit' ,component:EditCategoryComponent },
+  { path: 'product' ,component:ProductComponent },
 
 ];
 
