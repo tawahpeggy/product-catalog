@@ -23,16 +23,7 @@ category:any;
    
   }
 
-
-  
-  //  //edit an existing category
-  //  this.productCatalog.putCategory()
-  // .subscribe((data: Category[])=>{
-  //   this.updatecategory = data;
-  //   console.log(this.putcategory);
-  // })
-
-  // //delete's  a category
+ //delete's  a category
     delete(id: number) {
     this.productCatalog.deleteCategory(id)
     .subscribe((data)=>{

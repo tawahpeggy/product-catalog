@@ -1,7 +1,8 @@
 
+<button class="btn btn-primary" routerLink="/addproduct"> Add New Product </button>
 <div style="width:84%; margin-left:16%; margin-right:0;">
 <div  class="card" *ngFor="let product of products" style="width: 18rem;">
-    <h1>{{ product.category.name }}</h1>
+    <h1> {{ product.category.name }} </h1>
     <img src="../../assets/images/0005.jpg" class="card-img-top" alt="">
     <div class="card-body">
       <div class="class-text">
@@ -9,8 +10,8 @@
       <h3>Price:</h3>{{ product.price }}
       <h3>Quantity:</h3>{{ product.quantity }}
       </div>
-    <a><button routerLink="/edit"class="bg-primary">Edit</button></a> &nbsp;
-    <a><button class="bg-danger"(click)="delete(product.id)" >Delete Product</button></a>
+    <a><button routerLink="/editproduct" (click)="edit(product.id)"class="btn btn-primary">Edit</button></a> &nbsp;
+    <a><button class="btn btn-danger"(click)="delete(product.id)" >Delete Product</button></a>
     </div>
   </div>
 </div>

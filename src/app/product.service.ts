@@ -15,7 +15,10 @@ export class ProductService {
     return this.http.get<Product[]>("https://sheltered-falls-45349.herokuapp.com/api/products/")
   }
   //create a product under a particular category
-  createProduct(product: Product){}
+  _Url="https://sheltered-falls-45349.herokuapp.com/api/products/category/"
+  createProduct(product: Product, categoryid: number){
+    return this.http.post<any>(this._Url , product);
+  }
 
   //delete a product under a particular catigory
   deleteProduct(productid: number){

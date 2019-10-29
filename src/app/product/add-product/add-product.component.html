@@ -1,27 +1,31 @@
 <div class="jumbotron jumbotron-fluid bg-light">
     <div class="container">
             <div class="dp"></div>
-            <h1> Add a Category </h1>
+            <h1> Add Product </h1>
             <form (ngSubmit)="onSubmit(add)" #add="ngForm">
                <!-- still to write an import image function so it can enable users import thier image or maybe choose from a dropdown -->
                 <p>Import Image <Button class="text-white">Browse</Button> </p>
-                <label>Name</label>
-                <input type="text" id="name" class="form-control" placeholder="Category name" required [(ngModel)]="products.name" name="name"/>
+                <label>Name:</label>
+                <input type="text" id="name" class="form-control" placeholder="Product name" required [(ngModel)]="products.name" name="name"/>
                 
-                <label>Quantity</label>
+                <label>Quantity:</label>
                 <input type="text" id="quantity" class="form-control" placeholder="" required [(ngModel)]="products.name" name="name"/>
                  
-                <label> Price</label>
+                <label> Price:</label>
                 <input type="text"id="price"  class="form-control" [(ngModel)]="productModel.price" name="Price"/>
-                <!-- <small class="text-danger" [class.d-none]="name.valid || name.untouched">Name is empty </small> -->
+                <select class="custom-select">
+                    <label>Category:</label>
+                        <option selected> Choose Category </option> 
+                        <option *ngFor="let category of categories"> {{ Category.name }} </option>
+                        </select>
                 <section>
         <button type="submit" class="btn btn-primary"  > Save </button>
                     
                 </section>
             </form>
         </div>
-    </div>
     
+    </div>
     
     
    

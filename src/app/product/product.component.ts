@@ -20,6 +20,7 @@ export class ProductComponent implements OnInit {
       console.log(this.products);
     });
   }
+  //delete a product.
 delete(id:number){
 this.product.deleteProduct(id).subscribe((data)=>{
 this.products= data;
