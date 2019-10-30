@@ -14,10 +14,9 @@
   "dependencies": {
     "@angular/animations": "~8.2.0",
     "@angular/cli": "~8.2.1",
-    "@angular/compiler-cli": "~8.2.0",
-    "typescript": "~3.5.3",
     "@angular/common": "~8.2.0",
     "@angular/compiler": "~8.2.0",
+    "@angular/compiler-cli": "~8.2.0",
     "@angular/core": "~8.2.0",
     "@angular/forms": "~8.2.0",
     "@angular/platform-browser": "~8.2.0",
@@ -28,9 +27,11 @@
     "express": "^4.17.1",
     "jquery": "^3.4.1",
     "mdb": "^0.1.0",
+    "path": "^0.12.7",
     "popper.js": "^1.15.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
+    "typescript": "~3.5.3",
     "websocket": "^1.0.30",
     "zone.js": "~0.9.1"
   },
