@@ -14,7 +14,7 @@ import { CategoryDetailsComponent } from './category/category-list/category-deta
 import { AddCategoryComponent } from './category/add-category/add-category.component';
 import { SignupComponent } from './authentication/signup/signup.component';
 import { LoginComponent } from './authentication/login/login.component';
-import { EditCategoryComponent } from './category/edit-category/edit-category.component';
+//import { EditCategoryComponent } from './category/edit-category/edit-category.component';
 import { AddProductComponent } from './product/add-product/add-product.component';
 import { EditProductComponent } from './product/edit-product/edit-product.component';
 
@@ -33,7 +33,7 @@ import { EditProductComponent } from './product/edit-product/edit-product.compon
     AddCategoryComponent,
     SignupComponent,
     LoginComponent,
-    EditCategoryComponent,
+    //EditCategoryComponent,
     AddProductComponent,
     EditProductComponent,
   
