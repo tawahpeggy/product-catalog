@@ -1,0 +1,17 @@
+<div  style="width:84%; margin-left:16%; margin-right:0;"class="jumbotron jumbotron-fluid bg-success">
+    <div class="container">
+            <div class="dp"></div>
+            <h1> Edit Category </h1>
+            <form  (ngSubmit)="onSubmit(update.value)" #update="ngForm"> 
+               <!-- still to write an import image function so it can enable users import thier image or maybe choose from a dropdown -->
+                <p>Import Image <Button class="text-white">Browse</Button> </p>
+                <label>Name</label>
+                <input type="text" id="name" class="form-control" placeholder="Category's new name" required [(ngModel)]="categoryName" name="name"/>
+                <section>
+        <button type="submit" class="btn btn-primary" > Save </button>
+                    
+                </section>
+            </form>
+        </div>
+    </div>
+    

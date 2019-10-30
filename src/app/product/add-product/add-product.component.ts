@@ -12,7 +12,7 @@ import { NgForm } from '@angular/forms';
 })
 export class AddProductComponent implements OnInit {
   constructor(private _productService :ProductService) { }
-  // //adds a product
+  //adds a product
   // products:Product=new Product();
   // onSubmit(add:NgForm){
   //   this._productService.createProduct(add.value).subscribe(data=>{
@@ -22,6 +22,7 @@ export class AddProductComponent implements OnInit {
   // } 
 
   ngOnInit() {
+    
   }
 
 }

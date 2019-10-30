@@ -4,13 +4,15 @@
     <!--  use an ngfor wnen listing all categories since they are morethan one -->
     <table>
           <tr  id ="table" class="text-primary" *ngFor ="let category of categories"> 
-           <a routerLink= "categoryDetails" >
+           
                <td>
                {{ category.name }} 
               <a  > <button id="delete"  (click)="delete(category.id)" class="btn gtn-sm btn-danger"> Delete  </button> </a>
               &nbsp;
-              <a routerLink="/edit" ><button  class="btn btn-success ">Edit</button> </a>
-              </td> </a>
+              <a [routerLink]="['/edit',category.id]"
+                  class="btn btn-success" >Edit
+                </a> 
+              </td>
           </tr>
       </table>
    </div>
