@@ -15,7 +15,7 @@ export class AddProductComponent implements OnInit {
   // //adds a product
   // products:Product=new Product();
   // onSubmit(add:NgForm){
-  //   this._productService.createProduct(add.value,categoryid:number).subscribe(data=>{
+  //   this._productService.createProduct(add.value).subscribe(data=>{
   //     this.products= new Product();
   //     console.log(this.products);
   //   })
